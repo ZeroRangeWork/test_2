@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./94.png" alt="">
+        </div>
+        <div class="">
+            <nav>
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Товары</a></li>
+                    <li><a href="./about.html">О компании</a></li>
+                    <li><button id="open_modal">Открыть модальное окно</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main__photo">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eum numquam autem quaerat iusto recusandae illo, adipisci nobis sed molestias animi pariatur repudiandae vel laboriosam corrupti deleniti rerum explicabo ex.</h2>
+            <img src="./image.png" alt="">
+           
+        </div>
+        <div class="main__text">
+            <h1>lorem</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus reiciendis nisi vitae quae exercitationem? Autem minus architecto doloremque accusamus nihil reprehenderit vitae! Dolore est qui commodi porro molestias expedita dicta.</p>
+        </div>
+        <button id="active">
+            asdasda
+        </button>
+        <div class="img">
+            <div class="red">
+
+            </div>
+        </div>
+
+
+        <div class="" id="modal">
+            <span id="close_modal">
+                <button>X</button>
+            </span>
+
+        </div>
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+    <script>
+
+
+        document.getElementById("active").addEventListener("click", ()=> {
+
+            document.body.style.setProperty("--bg-color", "black")
+            document.body.style.setProperty("--font-color", "white")
+
+        })
+
+
+        document.getElementById("open_modal").addEventListener("click", ()=> {
+
+            document.getElementById("modal").style.display = "block";
+
+
+        })
+        document.getElementById("close_modal").addEventListener("click", ()=> {
+
+            document.getElementById("modal").style.display = "none";
+
+
+        })
+
+
+    </script>
+
+</body>
+</html>

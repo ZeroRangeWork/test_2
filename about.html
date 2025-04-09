@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asdasdas</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="slider">
+            <div class="slide">
+                <img src="./image.png" alt="">
+            </div>
+            <div class="slide hidden">
+                <img src="./94.png" alt="">
+            </div>
+            <div class="slide hidden">
+                <img src="./image.png" alt="">
+            </div>
+            <div class="slide hidden">
+                <img src="./image.png" alt="">
+            </div>
+            <div class="slide hidden">
+                <img src="./image.png" alt="">
+            </div>
+            <div class="slide hidden">
+                <img src="./image.png" alt="">
+            </div>
+            <div id="pag_slide">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var slide_list = document.querySelectorAll(".slide")
+        
+        var pag_slide = document.getElementById("pag_slide")
+
+        var active = 0;
+
+        for (var i =0; i < slide_list.length; ++i){
+            pag_slide.innerHTML += `<span name="${i}">&#9675;</span>`
+        }
+
+
+        pag_slide.addEventListener("click", (e)=>{
+            if (e.target.getAttribute("name")){
+                slide_list[e.target.getAttribute("name")].classList.remove("hidden")
+                slide_list[active].classList.add("hidden")
+                active = e.target.getAttribute("name")
+            }
+        })
+
+    </script>
+
+</body>
+</html>

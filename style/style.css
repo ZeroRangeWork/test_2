@@ -1,0 +1,120 @@
+@import url(./font.css);
+
+:root {
+    --bg-color: white;
+    --font-color: black;
+}
+*{
+    color: var(--font-color);
+    font-family: 'Satoshi';
+}
+
+body{
+    background: var(--bg-color);
+}
+
+header {
+    /* background: blue; */
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+
+.logo img{
+    width: 100px;
+}
+
+.logo img:hover{
+    width: 200px;
+    transition: 0.3s;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.main__photo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.main__photo img {
+    width: 20vw;
+}
+#active:active {
+    background-color: red;
+}
+
+
+.img {
+    width:  40vw;
+    height: 400px;
+}
+.img .red {
+    background: red;
+    width: 50%;
+    height: inherit;
+}
+
+
+
+#modal {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border: 1px solid black;
+    background: white;
+
+    display: none;
+
+}
+
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    width: 80vw;
+    height: 50vh;
+}
+.slider img{
+    width: 80vw;
+    height: 50vh;
+}
+
+.hidden {
+    display: none;
+
+
+}
+
+#pag_slide {
+  position: relative;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 30px;
+}
